@@ -141,9 +141,9 @@ async function processOrderForm(): Promise<void> {
     const modifiedPdfBytes = await pdfDoc.save();
     fs.writeFileSync(OUTPUT_PDF, modifiedPdfBytes);
 
-    console.log("Task-3 PDF generated successfully");
+    console.log("Task-3 PDF Generated Successfully");
   } catch (error) {
-    console.error("Error processing Task-3 PDF:", error);
+    console.error("Error Processing Task-3 PDF:", error);
   }
 }
 

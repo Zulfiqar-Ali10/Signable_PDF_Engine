@@ -223,9 +223,9 @@ async function processOrderForm(): Promise<void> {
         const modifiedPdfBytes = await pdfDoc.save();
         fs.writeFileSync(OUTPUT_PDF, modifiedPdfBytes);
 
-        console.log(`Success: Data added to Page 1 and Signature added to Page 2.`);
+        console.log(`Success: Data Added To Page 1 And Signature Added To Page 2`);
     } catch (error) {
-        console.error("Error processing PDF:", error);
+        console.error("Error Processing PDF:", error);
     }
 }
 
